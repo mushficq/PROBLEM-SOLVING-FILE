@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int even=0,odd=0,positive=0,negetive=0;
+    for(int i=0;i<n;i++){
+        int x;
+        cin>>x;
+        if(x%2==0){
+            even++;
+        }
+        else{
+            odd++;
+        }
+        if(x>0){
+            positive++;
+        }
+        else{
+            negetive++;
+        }
+
+    }
+    cout<<"Even : "<<even<<endl;
+    cout<<"Odd : "<<odd<<endl;
+    cout<<"Positive : "<<positive<<endl;
+    cout<<"Negetive : "<<negetive<<endl;
+
+}
